@@ -43,8 +43,6 @@ connection_string = (
     f"@{POSTGRES_HOST}:{POSTGRES_PORT}/{POSTGRES_DB}?sslmode=require"
 )
 
-# connection_string = "postgresql://postgres.ntdflkiiilusjsfmlhsp:GjzFd3Q6GdQ8RLkq@aws-1-ap-southeast-1.pooler.supabase.com:5432/postgres"
-
 try:
     print(f"\n🔄 Attempting connection to {connection_string}...")
     engine = create_engine(connection_string, pool_pre_ping=True)
